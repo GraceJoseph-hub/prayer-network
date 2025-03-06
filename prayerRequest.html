@@ -1,12 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prayer Request</title>
-  <link rel="stylesheet" href="./prayerRequest.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Prayer Request Page</title>
+  <link rel="stylesheet" href="prayerRequest.css">
 </head>
+
 <body>
-  
+  <header>
+    <!-- Navbar -->
+    <nav>
+      <div class="nav-items">
+        <div class="logo-div">
+          <img src="../img/mainLogo.png" alt="logo" class="logo" />
+        </div>
+        <div class="links" id="mobile-menu">
+          <a href="/" class="link">Home</a>
+          <a href="./about/about.html" class="link">Affirmations</a>
+          <a href="./ticket/ticket.html" class="link">Prayer Request</a>
+          <a href="./confections/confections.html" class="link">Testimonies</a>
+          <a href="./contact/contact.html" class="link">Give</a>
+        </div>
+      </div>
+
+      <!-- hamburger menu -->
+      <div class="mobile-icons">
+        <button id="menu-toggle" class="icon-btn">
+          <i class="fa fa-bars icon"></i>
+          <i class="fa fa-times icon"></i>
+        </button>
+        <i class="fa fa-bell icon"></i>
+        <i class="fa fa-search icon"></i>
+        <i class="fa fa-user icon"></i>
+      </div>
+    </nav>
+  </header>
+
+  <div class=" banner">
+    <div class="">
+      <div class="banner-inner">
+        <div class="overlay">
+          <div class="overlayText">
+            <h2>Latest Sermons</h2>
+            <button class="movie-btn-1">
+              <i class="fa fa-play"></i> Pray Now
+            </button>
+            <button class="movie-btn">
+              Donate <span class="btnArrow">&rarr;</span>
+            </button>
+          </div>
+        </div>
+        <img
+          src="https://media.istockphoto.com/id/157404674/photo/the-world-at-rest.jpg?s=2048x2048&w=is&k=20&c=YV29Rp3u219F3M-B8jj1QaCwt-ebJKKJw0_l0DiIe1M="
+          alt="banner">
+        <!-- <img src="./img/banner-1.jpg" /> -->
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="prayer-title">
+    <h1>Prayer Request</h1>
+    <p>Please fill out the form below to submit your prayer request.</p>
+  </div>
+  <form action="#" method="post" class="prayer-form">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="request">Prayer Request:</label>
+    <textarea id="request" name="request" rows="4" required></textarea>
+
+    <button type="submit" class="submit-btn">Submit Request</button>
+  </form>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h2 class="">Loveworld Television <span>Ministry</span></h2>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>+234 85485312</p>
+        <p>example@example.com</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Location</h3>
+        <p>Temple of God</p>
+        <p>724 10th Ave</p>
+        <p>New York, NY 56415</p>
+      </div>
+
+      <div class="footer-section subscribe">
+        <h3>Stay Connected</h3>
+        <p>Sign up with your email address to receive updates from us.</p>
+        <form>
+          <input type="email" placeholder="Email" required />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© copyright 2023 - All Rights Reserved.</p>
+      <a href="#">www.DownloadNewThemes.com</a>
+    </div>
+  </footer>
 </body>
 </html>

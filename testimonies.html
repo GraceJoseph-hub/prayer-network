@@ -1,12 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Testimonies</title>
-  <link rel="stylesheet" href="./testimonies.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="testimonies.css">
 </head>
+
 <body>
-  
+  <header>
+    <!-- Navbar -->
+    <nav>
+      <div class="nav-items">
+        <div class="logo-div">
+          <img src="../img/mainLogo.png" alt="logo" class="logo" />
+        </div>
+        <div class="links" id="mobile-menu">
+          <a href="/" class="link">Home</a>
+          <a href="./about/about.html" class="link">Affirmations</a>
+          <a href="./ticket/ticket.html" class="link">Prayer Request</a>
+          <a href="./confections/confections.html" class="link">Testimonies</a>
+          <a href="./contact/contact.html" class="link">Give</a>
+        </div>
+      </div>
+
+      <!-- hamburger menu -->
+      <div class="mobile-icons">
+        <button id="menu-toggle" class="icon-btn">
+          <i class="fa fa-bars icon"></i>
+          <i class="fa fa-times icon"></i>
+        </button>
+        <i class="fa fa-bell icon"></i>
+        <i class="fa fa-search icon"></i>
+        <i class="fa fa-user icon"></i>
+      </div>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <div class="banner-inner">
+      <div class="overlay">
+        <div class="overlayText">
+          <h2>Testimonies</h2>
+          <p>For we overcame by the blood of the lamb and the words of our testimonies</p>
+        </div>
+      </div>
+      <img
+        src="https://img.freepik.com/free-photo/begging-lovely-afro-american-lady-has-beseeching-cheerful-look-asks-support-her-keeps-palms-praying-gesture-wears-casual-winter-sweater-isolated-purple-wall_273609-26656.jpg?t=st=1741268991~exp=1741272591~hmac=3d7b76e3cda987cda8cbba5df39a6b4535d6b81847272c908a8d76a662fbc8f3&w=2000"
+        alt="banner">
+    </div>
+  </div>
+
+
+  <div class="content">
+    <div class="testimony-section">
+      <h2>Read Testimonies</h2>
+      <div class="testimony">
+        <h3>John Doe</h3>
+        <p>God has been so good to me. I was healed from a chronic illness...</p>
+        <button class="comment-btn">Comment</button>
+      </div>
+      <div class="testimony">
+        <h3>Jane Smith</h3>
+        <p>I received a financial breakthrough after praying...</p>
+        <button class="comment-btn">Comment</button>
+      </div>
+    </div>
+
+    <div class="video-section">
+      <h2>Watch Live Testimonies</h2>
+      <video width="100%" controls class="video-player">
+        <source src="your-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="submit-testimony">
+      <h2>Send Your Testimony</h2>
+      <form action="#" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="testimony">Your Testimony:</label>
+        <textarea id="testimony" name="testimony" rows="4" required></textarea>
+
+        <button type="submit" class="submit-btn">Submit Testimony</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h2>Loveworld Television <span>Ministry</span></h2>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>+234 85485312</p>
+        <p>example@example.com</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Location</h3>
+        <p>Temple of God</p>
+        <p>724 10th Ave</p>
+        <p>New York, NY 56415</p>
+      </div>
+
+      <div class="footer-section subscribe">
+        <h3>Stay Connected</h3>
+        <p>Sign up with your email address to receive updates from us.</p>
+        <form>
+          <input type="email" placeholder="Email" required />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© copyright 2023 - All Rights Reserved.</p>
+      <a href="#">www.DownloadNewThemes.com</a>
+    </div>
+  </footer>
 </body>
+
 </html>
