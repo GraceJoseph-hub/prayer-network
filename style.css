@@ -6,7 +6,8 @@
 }
 
 body {
-  background-color: #030a1b;
+  background-color: #f0f8ff;
+  /* background-color: #030a1b; */
 }
 
 
@@ -86,13 +87,15 @@ nav {
 
 /* Default styles for desktop */
 #mobile-menu {
-  display: flex; /* Flex-row by default for desktop */
+  display: flex;
+  /* Flex-row by default for desktop */
   flex-direction: row;
   gap: 2rem;
 }
 
 #menu-toggle {
-  display: none; /* Hide the menu toggle button on desktop */
+  display: none;
+  /* Hide the menu toggle button on desktop */
 }
 
 .mySwiperOne {
@@ -124,7 +127,7 @@ nav {
   text-align: center;
 }
 
-.overlayText h2{
+.overlayText h2 {
   font-size: 3rem;
 }
 
@@ -150,10 +153,11 @@ nav {
   background-color: purple;
 }
 
-.btnArrow{
+.btnArrow {
   color: black;
   font-weight: 700;
 }
+
 .movie-btn {
   margin-top: 1.2rem;
   background-color: antiquewhite;
@@ -172,14 +176,14 @@ nav {
 
 /* Video Player */
 .container {
+  /* background-color: red; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  /* gap: 6rem; */
+  /* justify-content: space-between; */
+  gap: 14rem;
   height: 400px;
   margin: 5rem 0;
-  /* background: white; */
-  padding: 8rem 5%;
+  padding: 18rem 5%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -190,11 +194,15 @@ nav {
 
 .video-section h2 {
   margin-bottom: 2rem;
-  /* color: #034694; */
-  /* font-family: "Great Vibes", cursive; */
+  font-size: 3rem;
+  font-family: "Great Vibes", cursive;
+  background: linear-gradient(90deg, purple, white, blue, #feb47b, blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.video-player{
+.video-player {
   height: 350px;
   border-radius: 1rem;
 
@@ -213,14 +221,17 @@ nav {
   border-radius: 5px;
 }
 
-.magazine-card button{
+.magazine-card button {
+  /* background: radial-gradient(circle, purple, white, blue, #feb47b, blue); */
+  /* background-color: purple; */
+  background: linear-gradient(90deg, blue, white);
   display: block;
-  color: black;
-  padding: 4px 8px;
-  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
   border: none;
-  margin-top: 8px;
+  border-radius: 10px;
   cursor: pointer;
+  margin-top: 8px;
 }
 
 
@@ -230,9 +241,11 @@ nav {
   top: 50%;
   transform: translateY(-35%) rotate(-90deg);
   font-size: 2.5rem;
-  /* font-family: "Great Vibes", cursive; */
-  /* font-weight: bold; */
-  /* color: #d90429; */
+  font-family: cursive;
+  background: linear-gradient(90deg, blue, blue, purple, #feb47b, #f0f8ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Blog Section */
@@ -241,7 +254,7 @@ nav {
   grid-template-columns: auto auto auto;
   gap: 50px;
   padding: 5rem 5%;
-  /* background-image: linear-gradient(to bottom, #030a1b 0%, purple 50%, #030a1b 100%); */
+  background-image: linear-gradient(to bottom, #030a1b 0%, white 50%, #030a1b 100%);
 }
 
 .card-inner {
@@ -263,22 +276,27 @@ nav {
 }
 
 .card-icon {
-  background-color: #8b7210;
+  background-color: black;
+  /* background-color: #8b7210; */
   /* background-color: #72e1f3; */
   padding: 8px 12px;
   border-radius: 50%;
 }
 
-.card-inner p{
+.card-inner p {
   margin-bottom: 12px;
-  color: #e6b800;
-}
-
-.card-text {
   margin-top: 16px;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  /* color: #e6b800; */
 }
 
-.card-inner a{
+/* .card-text {
+  
+} */
+
+.card-inner a {
   background-color: #091638;
 }
 
@@ -286,11 +304,14 @@ nav {
   /* background-color: rgba(0, 0, 0, 0.21); */
   /* color: white; */
   /* margin-top: 10px; */
+  /* background: linear-gradient(90deg, purple, yellow); */
   text-decoration: none;
+  background: linear-gradient(90deg, black, white);
 }
 
-.btnArrow{
-  color: #e6b800;
+.btnArrow {
+  /* color: #e6b800; */
+  color: purple;
   margin-left: 5px;
 }
 

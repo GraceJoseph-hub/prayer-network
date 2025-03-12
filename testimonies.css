@@ -88,7 +88,7 @@ body {
   }
   
   .banner-inner {
-    background-position: center;
+    background-position: top;
     background-size: cover;
     position: relative;
   }
@@ -112,7 +112,7 @@ body {
   .overlayText {
     position: absolute;
     top: 60%;
-    left: 40%;
+    left: 30%;
     text-align: center;
   }
   
@@ -125,9 +125,15 @@ body {
   -webkit-text-fill-color: transparent;
   }
   
-  .overlayTextChild {
-    font-size: 0.6rem;
+  .overlayText p{
+    color: white;
+    /* margin-left: -1rem; */
+
+        /* text-align: center; */
   }
+  /* .overlayTextChild {
+    font-size: 0.6rem;
+  } */
   
   .fa-star {
     font-size: 0.8rem;
@@ -167,18 +173,31 @@ body {
 
 
   .content {
-    margin: 5rem 0;
+    margin: 5rem;
     padding: 20px;
     text-align: center;
   }
   
+  .content h2{
+    font-size: 2rem;
+    font-family: "Great Vibes", cursive;
+    background: linear-gradient(90deg, white, white, purple, #feb47b, #f0f8ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+    margin: 2rem 0;
+  }
   .testimony-section, .video-section, .submit-testimony {
     margin-bottom: 40px;
   }
-  
-  .testimony-section h2{
-    color: purple;
+
+  .testimony-section{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   }
+  
+
 
   .testimony {
     background-color: #fff;
@@ -186,6 +205,29 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    /* width: 200px; */
+  }
+
+
+  .testimony-content h3, h4, p{
+    color: black;
+    margin-bottom: 10px;
+  }
+
+
+  .testimony-content h3{
+    font-family: "Great Vibes", cursive;
+    font-weight: bold;
+    background: linear-gradient(90deg, white, white, purple, #feb47b, #f0f8ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  .testimony img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: top;
   }
   
   .testimony h3, p {
@@ -193,21 +235,40 @@ body {
     color: black;
   }
   
-  .comment-btn {
+  .readmore-btn {
     background-color: purple;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
   }
   
-  .comment-btn:hover {
+  .readmore-btn:hover {
     background-color: #5a2d82;
   }
+
+  .liveVideo-section{
+    margin: 0 3% 0;
+    display: flex;
+    /* align-items: center; */
+    /* gap: 4rem; */
+    /* justify-content: space-between; */
+  }
   
+  .liveVideo-section h2{
+    font-family:  cursive;
+    font-weight: bold;
+    background: linear-gradient(90deg, #e6b800, rgb(0, 187, 255), white, blue, purple, #e6b800);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+
   .video-section video {
-    width: 100%;
+    width: 80%;
+    height: 350px;
     border-radius: 8px;
   }
   
@@ -222,6 +283,8 @@ body {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
+    color: black;
+    text-align: start;
   }
   
   .submit-testimony input[type="text"],
@@ -249,7 +312,7 @@ body {
   
   .footer {
     background-color: #030a1b;
-    color: white;
+    /* color: white; */
     padding: 40px 20px;
     text-align: left;
     border-top: 1px solid #444;
@@ -262,6 +325,9 @@ body {
     gap: 20px;
   }
   
+  .footer-container p{
+    color: white;
+  }
   .footer-section {
     max-width: 250px;
   }
