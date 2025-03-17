@@ -1,337 +1,334 @@
-
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    color: white;
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* color: black; */
+}
 
 body {
-    /* font-family: Arial, sans-serif; */
-    background-color: #f0f8ff;
-    /* margin: 0; */
-    /* padding: 20px; */
-  }
-  
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    position: absolute;
-    top: 0;
-    left: 3%;
-    z-index: 10;
-    backdrop-filter: blur(5px);
-    padding: 20px 18px;
-    width: 100%;
-    max-width: 90%;
-    margin: 40px 20px;
-  }
-  
-  .nav-items {
-    display: flex;
-    align-items: center;
-    max-width: 500px;
-    gap: 17rem;
-  }
-  
-  .logo {
-    height: 50px;
-    width: 50px;
-  }
-  
-  .links {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .link {
-    font-size: 0.9rem;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .link:hover,
-  .link.active {
-    color: #ff4786;
-  }
-  
-  .icon {
-    font-size: 15px;
-    margin: 10px;
-    cursor: pointer;
-    color: white;
-  }
-  
-  .icon-btn {
-    border: none;
-    background-color: transparent;
-  }
-  
-  
-  .fa-sun-o {
-    display: none;
-  }
-  
-  /* Default styles for desktop */
-  #mobile-menu {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-  }
-  
-  #menu-toggle {
-    display: none;
-  }
+  /* font-family: Arial, sans-serif; */
+  background-color: #f0f8ff;
+  /* margin: 0; */
+  /* padding: 20px; */
+}
 
-  
-  .banner {
-    height: 54vh;
-    /* margin: 0; */
-    /* margin-bottom: 120px; */
-    padding: 0;
-  }
-  
-  .banner-inner {
-    background-position: center;
-    background-size: cover;
-    position: relative;
-  }
-  
-  /* .banner-inner img{
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  position: absolute;
+  top: 0;
+  left: 3%;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  padding: 20px 18px;
+  width: 100%;
+  max-width: 90%;
+  margin: 40px 20px;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  gap: 17rem;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  white-space: nowrap;
+}
+
+.link {
+  font-size: 0.9rem;
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover,
+.link.active {
+  color: blueviolet;
+}
+
+.icon {
+  font-size: 15px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.icon-btn {
+  border: none;
+  background-color: transparent;
+}
+
+
+.fa-sun-o {
+  display: none;
+}
+
+/* Default styles for desktop */
+#mobile-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+
+.banner {
+  height: 54vh;
+  /* margin: 0; */
+  /* margin-bottom: 120px; */
+  padding: 0;
+}
+
+.banner-inner {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* .banner-inner img{
     height: 84vh;
     object-fit: cover;
   } */
-  
-  .banner-inner img {
-    display: block;
-    height: 64vh;
-    object-fit: cover;
-    width: 100%;  
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.354);
-    height: 100%;
-    width: 100%;
-  }
-  
-  .overlayText {
-    position: absolute;
-    top: 60%;
-    left: 40%;
-    text-align: center;
-  }
-  
-  .overlayText h2 {
-    font-size: 3rem;
-    color: aliceblue;
-  }
-  
-  .overlayTextChild {
-    font-size: 0.6rem;
-  }
-  
-  .fa-star {
-    font-size: 0.8rem;
-    margin-left: -4px;
-  }
-  
-  .movie-btn-1,
-  .movie-btn, .submit-btn {
-    padding: 6px 10px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .movie-btn-1, .submit-btn {
-    background-color: purple;
-    color: white;
-  }
-  
-  .btnArrow {
-    color: black;
-    font-weight: 700;
-  }
-  
-  .movie-btn {
-    margin-top: 1.2rem;
-    background-color: antiquewhite;
-    color: purple;
-  }
-  
-  .fa-play {
-    font-size: 0.8rem;
-    color: white;
-  }
 
-  .prayer-room{
-    margin: 2rem 5%;
-    padding: 4rem 0;
-    display: flex;
-    /* align-items: start; */
-    justify-content: space-between;
-  }
+.banner-inner img {
+  display: block;
+  height: 64vh;
+  object-fit: cover;
+  width: 100%;
+}
 
-  .video-section {
-    max-width: 700px;
-    height: 500px;
-  }
-  
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.354);
+  height: 100%;
+  width: 100%;
+}
+
+.overlayText {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  text-align: center;
+}
+
+.overlayText h2 {
+  font-size: 3rem;
+  color: aliceblue;
+}
+
+.overlayTextChild {
+  font-size: 0.6rem;
+}
+
+.fa-star {
+  font-size: 0.8rem;
+  margin-left: -4px;
+}
+
+.movie-btn-1,
+.movie-btn,
+.submit-btn {
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
+
+.movie-btn-1,
+.submit-btn {
+  background-color: purple;
+  color: white;
+}
+
+.btnArrow {
+  color: black;
+  font-weight: 700;
+}
+
+.movie-btn {
+  margin-top: 1.2rem;
+  background-color: antiquewhite;
+  color: purple;
+}
+
+.fa-play {
+  font-size: 0.8rem;
+  color: white;
+}
 
 
+.container {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 14rem;
+  height: 400px;
+  margin: 5rem 0;
+  padding: 18rem 5%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  .video-section h2 {
-    margin-bottom: 2rem;
-    /* color: #034694; */
-    /* font-family: "Great Vibes", cursive; */
-  }
-  
-  .video-player{
-    height: 500px;
-    border-radius: 2rem;
-  
-  }
+.video-section {
+  max-width: 750px;
+}
 
-  .prayer-title{
-    margin: 6rem 4rem 5%;
-  }
+.video-section h2 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-family: "Great Vibes", cursive;
+  background: linear-gradient(90deg, purple, white, blue, #feb47b, blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  .prayer-title h1 {
-    color: purple;
-    /* color: #333; */
-  }
-  
- .prayer-title p {
-    font-size: 1.2em;
-    color: purple;
-  }
-  
-  .prayer-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 2rem auto;
-  }
-  
- .prayer-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: purple;
-  }
-  
-  .prayer-form input[type="text"],
-  .prayer-form input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .submit-btn{
-    padding: 8px 12px;
-    /* background-color: #ffcc00; */
-  }
+.video-player {
+  height: 350px;
+  border-radius: 1rem;
 
-  
-  button:hover {
-    background-color: #45a049;
-  }
+}
+
+.magazine-card {
+  /* background-color: red; */
+  position: relative;
+  text-align: center;
+}
+
+.magazine-card img {
+  width: 320px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.magazine-card button {
+  /* background: radial-gradient(circle, purple, white, blue, #feb47b, blue); */
+  /* background-color: purple; */
+  background: linear-gradient(90deg, blue, white);
+  display: block;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 8px;
+}
 
 
-  .footer {
-    background-color: #030a1b;
-    color: white;
-    padding: 40px 20px;
-    text-align: left;
-    border-top: 1px solid #444;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .footer-section {
-    /* display: flex; */
-    max-width: 250px;
-  }
-  
-  /* .footer-section h2 {
+.magazine-text {
+  position: absolute;
+  left: -14rem;
+  top: 50%;
+  transform: translateY(-35%) rotate(-90deg);
+  font-size: 2.5rem;
+  font-family: cursive;
+  background: linear-gradient(90deg, blue, blue, purple, #feb47b, #f0f8ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.footer {
+  background-color: #030a1b;
+  color: white;
+  padding: 40px 20px;
+  text-align: left;
+  border-top: 1px solid #444;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  /* display: flex; */
+  max-width: 250px;
+}
+
+/* .footer-section h2 {
       font-size: 24px;
       font-weight: bold;
   } */
-  
-  
-  .footer-section h2,
-  h3 {
-    font-family: "Great Vibes", cursive;
-    font-size: 32px;
-    font-weight: normal;
-  }
-  
-  .footer-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-section p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  
-  .subscribe form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .subscribe input {
-    padding: 10px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 18px;
-    outline: none;
-  }
-  
-  .subscribe button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #ffcc00;
-    border: none;
-    border-radius: 18px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .subscribe button:hover {
-    background-color: #e6b800;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 10px;
-  }
-  
-  .footer-bottom a {
-    color: #ffcc00;
-    text-decoration: none;
-  }
-  
-  .footer-bottom a:hover {
-    text-decoration: underline;
-  }
-  
+
+
+.footer-section h2,
+h3 {
+  font-family: "Great Vibes", cursive;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.subscribe form {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe input {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 18px;
+  outline: none;
+}
+
+.subscribe button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.subscribe button:hover {
+  background-color: #e6b800;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.footer-bottom a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}

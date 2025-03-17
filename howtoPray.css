@@ -41,6 +41,7 @@ body {
   .links {
     display: flex;
     gap: 20px;
+    white-space: nowrap;
   }
   
   .link {
@@ -129,6 +130,33 @@ body {
   .overlayTextChild {
     font-size: 0.6rem;
   }
+
+  .movie-btn-1,
+.movie-btn {
+  visibility: hidden;
+  /* display: none; */
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
+
+.movie-btn-1 {
+  background-color: purple;
+}
+
+.btnArrow {
+  color: black;
+  font-weight: 700;
+}
+
+.movie-btn {
+  margin-top: 1.2rem;
+  background-color: antiquewhite;
+  /* background-color: rgba(0, 0, 0, 0.354); */
+  color: purple;
+}
   
   .fa-star {
     font-size: 0.8rem;

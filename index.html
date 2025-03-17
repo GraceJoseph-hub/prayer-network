@@ -18,6 +18,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="plyr.css" />
+
   </head>
   <body>
     <header>
@@ -32,7 +34,9 @@
             <a href="./affirmation.html" class="link">Affirmations</a>
             <a href="./prayerRoom.html" class="link">Prayer Room</a>
             <a href="./testimonies.html" class="link">Testimonies</a>
-            <a href="./contact/contact.html" class="link">Give</a>
+            <a href="./howtoPray.html" class="link">How To Pray Effectively</a>
+            <!-- <a href="./testimonies.html" class="link">Testimonies</a>
+            <a href="./contact/contact.html" class="link">Give</a> -->
           </div>
         </div>
 
@@ -151,38 +155,71 @@
       </div>
     </div>
 
-    <!-- Video Player -->
-    <div class="container">
-      <div class="video-section">
-        <h2>Featured Miracle Video</h2>
-        <video width="100%" controls class="video-player">
-          <source src="your-video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="magazine-card">
-        <span class="magazine-text">PRAYER WORKS</span>
-        <img src="https://hsch.ceflixcdn.com/uploadmagazine/jan25-mag.png" alt="Magazine Cover" />
-        <button>Read Testimonies</button>
+    <div class="prayer-room-container">
+      <h2 class="prayer-room-title">Join Our Prayer Room Let's Make Power <br> Available and Cause Changes</h2>
+      <div class="prayer-room">
+        <div class="video-section">
+          <div class="plyr__video-embed" id="player">
+            <iframe
+              src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+              allowfullscreen
+              allowtransparency
+              allow="autoplay"
+            ></iframe>
+          </div>
+        </div>
+        <div class="content-section">
+          <div class="image-section">
+            <img src="https://hsch.ceflixcdn.com/hsopc/praywithmeteens.jpg" alt="Pray with Me">
+          </div>
+          <div class="text-section">
+            <h2>Today's Prayer Point</h2>
+            <div class="scrollable-text">
+              <p><strong>Wednesday, March 12, 2025</strong></p>
+              <h3>PRAY FOR HEALING TO THE NATIONS</h3>
+              <p class="prayer-points">1 Timothy 2:1-4 - "I exhort therefore, that, first of all, supplications, prayers, intercessions, and
+                giving of thanks, be made for all men; For kings, and for all that are in authority; that we may lead a
+                quiet and peaceable life in all godliness and honesty."
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt officiis excepturi corporis consequatur
+                voluptatum aspernatur tenetur laboriosam iste modi maxime architecto cumque quas, sint accusamus
+                voluptates fugiat, eius hic mollitia.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    
+    <!-- PRAYER REQUEST FORM -->
+    <div>
+      <div class="prayer-title">
+        <h1>Prayer Request</h1>
+        <p>Please fill out the form below to submit your prayer request.</p>
+      </div>
+      <form action="#" method="post" class="prayer-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="request">Prayer Request:</label>
+        <textarea id="request" name="request" rows="4" required></textarea>
+  
+        <button type="submit" class="submit-btn">Submit Request</button>
+      </form>
+    </div>
 
-    <!-- Blog section -->
-    <section class="cards">
+    
+
+    
+    <!-- <section class="cards">
       <div class="card-inner">
         <img
           src="./img/card-1.jpg"
           alt="God answers prayers"
           class="card-img"
         />
-        <div class="card-icon-div">
-          <div class="card-icon">
-            <i class="fa fa-music"></i>
-          </div>
-          <div class="card-icon">
-            <i class="fa fa-play"></i>
-          </div>
-        </div>
         <p class="card-text">Voice of truth</p>
         <a href="./voiceOfTruth.html" class="movie-btn-1 read-btn">
           Read more <span class="btnArrow">&rarr;</span>
@@ -194,14 +231,6 @@
           alt="God answers prayers"
           class="card-img"
         />
-        <div class="card-icon-div">
-          <div class="card-icon">
-            <i class="fa fa-music"></i>
-          </div>
-          <div class="card-icon">
-            <i class="fa fa-play"></i>
-          </div>
-        </div>
         <p class="card-text">Affirmations</p>
         <a href="./affirmation.html" class="movie-btn-1 read-btn">
           Read more <span class="btnArrow">&rarr;</span>
@@ -213,14 +242,6 @@
           alt="God answers prayers"
           class="card-img"
         />
-        <div class="card-icon-div">
-          <div class="card-icon">
-            <i class="fa fa-music"></i>
-          </div>
-          <div class="card-icon">
-            <i class="fa fa-play"></i>
-          </div>
-        </div>
         <p class="card-text">How to pray effectively</p>
         <a href="./howtoPray.html" class="movie-btn-1 read-btn">
           Read more <span class="btnArrow">&rarr;</span>
@@ -232,14 +253,6 @@
           alt="God answers prayers"
           class="card-img"
         />
-        <div class="card-icon-div">
-          <div class="card-icon">
-            <i class="fa fa-music"></i>
-          </div>
-          <div class="card-icon">
-            <i class="fa fa-play"></i>
-          </div>
-        </div>
         <p class="card-text">Prayer request</p>
         <a href="./prayerRequest.html" class="movie-btn-1 read-btn">
           Read more <span class="btnArrow">&rarr;</span>
@@ -251,14 +264,6 @@
           alt="God answers prayers"
           class="card-img"
         />
-        <div class="card-icon-div">
-          <div class="card-icon">
-            <i class="fa fa-music"></i>
-          </div>
-          <div class="card-icon">
-            <i class="fa fa-play"></i>
-          </div>
-        </div>
         <p class="card-text">Testimonies</p>
         <a href="./testimonies.html" class="movie-btn-1 read-btn">
           Read more <span class="btnArrow">&rarr;</span>
@@ -270,20 +275,12 @@
           alt="God answers prayers"
           class="card-img"
         />
-        <div class="card-icon-div">
-          <div class="card-icon">
-            <i class="fa fa-music"></i>
-          </div>
-          <div class="card-icon">
-            <i class="fa fa-play"></i>
-          </div>
-        </div>
         <p class="card-text">Word for the now</p>
         <a href="./wordForNow.html" class="movie-btn-1 read-btn">
           Read more <span class="btnArrow">&rarr;</span>
         </a>
       </div>
-    </section>
+    </section> -->
 
 
     <footer class="footer">
@@ -322,5 +319,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
+    <script src="./plyr.js"></script>
   </body>
 </html>
